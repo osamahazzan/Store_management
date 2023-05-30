@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en"><!--jjkjh-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <html lang="ar" dir="rtl"></html> <!--jjkjh-->
+    <title>Document</title>
+    <style>
+        *{
+            direction: rtl;
+        }
+        .container{
+            background-color: rgba(35, 161, 211, 0.74);
+            border-radius: 5px;
+            width:600px;
+            padding: 10px;
+        }
+        body{
+            background-color: rgba(0, 0, 0, 0.295);
+
+        }
+        h5 {
+text-align: right;
+        }
+        input:focus{
+            transform: scale(1.1);
+           
+        }
+        h2{
+            
+            background-color: rgba(0, 102, 255, 0.281); 
+            text-align: center;
+            height: 80px;
+           
+        }
+        #a{
+            float:right;
+margin-top:15px; ;
+        }
+        button{
+            padding: 5px;
+            background-color:red;
+            text:white;
+            width: 70px;
+        }
+        #c{
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <br>
+<div class="container">
+    <form action="http://localhost/p1.php" method="post">
+        
+    <div class="form-group">
+        
+        <h2 style="padding-top:10px;">صفحه العملاءوالموردين</h2>
+        <!--<h5>
+              اسم العميل او المورد
+        </h5>
+        <input class="form-control"  type="text" name="namea" id="">
+
+    </div><div class="form-group">
+        <h5>
+           رقم هاتف 
+        </h5>
+    
+        <input class="form-control"  type="tel" name="tela" id="">
+
+    </div><div class="form-group">
+        <h5>
+           العنوان 
+        </h5>
+        <input class="form-control"  type="text" name="address" id="">
+
+    </div><div class="form-group">
+        <h5>
+            البريد الالكتروني 
+        </h5>
+        <input class="form-control"  type="email" name="emaila" id="">
+
+    </div>
+    <div class="form-group">
+        <h5>
+            تاريخ بدايه التعامل
+        </h5>
+        <input class="form-control"type="date" name="dataa" id="">-->
+        <br>
+        <h5 for="namea">اسم العميل أو المورد</h5>
+<input class="form-control" type="text" name="namea" id="namea" required>
+
+<h5 for="tela">رقم الهاتف</h5>
+<input class="form-control" type="tel" name="tela" id="tela" pattern="^(967)?(7[0123456789])[0-9]{7}$" required oninvalid="this.setCustomValidity('يجب إدخال رقم هاتف صالح مع مفتاح الدولة')">
+<h5 for="address">العنوان</h5>
+<input class="form-control" type="text" name="address" id="address" required>
+
+<h5 for="emaila">البريد الإلكتروني</h5>
+<input class="form-control" type="email" name="emaila" id="emaila" required>
+
+<h5 for="dataa">تاريخ بداية التعامل</h5>
+<input class="form-control" type="date" name="dataa" id="dataa" required min="2020-01-01" max="<?php echo date('Y-m-d'); ?>">
+    </div>
+    <br>
+
+   <a href="http://localhost/projectphp/disblay.php"> <button type="submit" id="a" name="submit" class="btn btn-primary">submit</button></a>
+    </br></form>
+    <a href="../login2.php" ><button id="c"> خروج  </button></a></div>
+</div>
+<script src="js/jquery.3.6.4.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>

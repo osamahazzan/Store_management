@@ -1,0 +1,41 @@
+<?php
+$conn=mysqli_connect('localhost','root','','baha');
+if($conn){
+    echo "success";
+}
+else{
+    echo "no";
+}
+ $id=$_POST['id'];
+
+ $name=$_POST['name'];
+ $phone=$_POST['phone'];
+ $email=$_POST['email'];
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="connect.php" method="post">
+    <label for=""><h3>id</h3></label>
+    <input type="number" name="id" id="id" required/>
+
+    <label for=""><h3>name</h3></label>
+
+        <input type="text"  name="name" id="name" required/>
+        <label for=""><h3>phone</h3></label>
+        
+        <input type="text" name="phone" id="phone" required/>
+        <label for=""><h3>email</h3></label>
+        <input type="email" name="email" id="email" required/>
+
+        
+        <input type='submit' name='submit' id='submit'/>
+    </form>
+</body>
+</html>

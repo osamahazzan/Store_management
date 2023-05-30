@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <style>
+        *{
+            direction: rtl;
+        }
+        .container{
+            background-color: rgb(35, 170, 211);
+            border-radius: 5px;
+            width: 700px;
+        }
+        h5 {
+text-align: right;
+        }
+        input:focus{
+            transform: scale(1.1);
+           
+        }
+        h1{
+            
+            background-color: rgba(0, 255, 255, 0.363); 
+            text-align: center;
+            height: 80px;
+          
+            
+        }
+        #a{
+            float:right;
+
+        }
+        button{
+            padding: 5px;
+            background-color:red;
+            text:white;
+            width: 70px;
+
+        }
+        #c{
+            border-radius: 5px;
+
+        }
+    </style>
+    <title>Document</title>
+  
+</head>
+<body>
+<div class="container">
+    <h1>صفحه المنتجات</h1>
+    <form action="http://localhost/p6s.php" method="post">
+        
+    <div class="form-group">
+        <h5>
+            اسم المنتج
+        </h5>
+        <input class="form-control"required type="text" name="namea" id="">
+
+    </div><div class=" row">
+        <div class="col">
+        <h5>
+             السعر
+        </h5>
+        <input onkeyup="getTotal()" class="form-control" required  type="tel" name="price" id="price">
+
+    </div><div class="col">
+        <h5>
+             الخصم
+        </h5>
+        <input onkeyup="getTotal()" class="form-control" required type="tel" name="discount" id="discount">
+
+    </div>
+
+    </div><div class=" row">
+        <div class="col">
+        <h5>
+             الاعلانات
+        </h5>
+        <input onkeyup="getTotal()" class="form-control" requiredplaceholder="  " type="tel" name="ael" id="ael">
+
+    </div><div class="col">
+        <h5>
+             الضرائب
+        </h5>
+        <input onkeyup="getTotal()" class="form-control" requiredplaceholder="  " type="tel" name="taxes" id="taxes">
+
+    </div>
+
+    </div>
+    <div class="form-group">
+        <h5>
+            السعر النهائي
+        </h5>
+
+        <input  class="form-control" requiredplaceholder="" type="tel" name="priceend" id="priceend">
+
+    </div>
+    <div class="form-group">
+        <h5>
+           تاريخ الانتاج
+        </h5>
+        <input class="form-control" required type="date" name="dataa" id="">
+
+    </div><div class="form-group">
+    <h5>
+            تاريخ الانتهاء 
+        </h5>
+        <input class="form-control" required type="date" name="datae" id="">
+
+    </div>
+<br>
+    <button type="submit" name="submit" id="a" class="btn btn-primary">موافق</button>
+
+    </form>
+    <a href="../login2.php"><button id="c"> خروج  </button></a>
+
+    <br>
+<br>
+</div>
+<script src="js/jquery.3.6.4.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="prodect.js"></script>
+   
+</body>
+</html>
