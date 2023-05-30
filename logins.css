@@ -1,0 +1,43 @@
+body{
+    background-color:rgba(7, 9, 14, 0.048);
+    display:flex ;
+
+justify-content: center;
+align-items: center;
+height: 90vh;
+
+
+
+}
+form{
+    width: 500px;
+    text-align: center;
+    background-color: rgb(7, 57, 100);
+font-size: large;
+border-radius:8px   ;
+
+}
+input{
+    border-radius:5px;
+padding: 7px; 
+width: 300px; 
+}
+input[type="submit"]{
+    width: 150px;
+    padding: 10px;
+    float: right;
+    margin:5px ;
+    background-color: rgba(0, 0, 255, 0.493);
+}
+.error{
+    background-color: rgba(121, 223, 241, 0.897);
+    color:white ;
+    padding: 10px;
+    width: 80%;
+margin-left: 40px;
+    justify-content: center;
+    border-radius: 5px;
+}
+input[type="email"]{
+    width: 310px;
+margin-left: 25px;}
